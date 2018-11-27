@@ -29,6 +29,10 @@
       "jsx": "react",
 
       "rootDir": "src",
+      "baseUrl": "src",
+      "paths": {
+        "@b/*": ["view/components/*"],
+      },
       "outDir": "dist",
 
       "sourceMap": true

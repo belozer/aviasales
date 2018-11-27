@@ -1,4 +1,5 @@
 const cpx = require('cpx');
+const path = require('path');
 const rewirePostCSS = require('react-app-rewire-postcss');
 const rewireTypescript = require('react-app-rewire-clean-typescript');
 const rewireWebpackBundleAnalyzer = require('react-app-rewire-webpack-bundle-analyzer');
@@ -45,6 +46,10 @@ module.exports = function override(config, env) {
         });
 
         cpx.copySync('src/**/*.css', 'dist');
+    }
+
+    config.resolve.alias = {
+        '@b' : path.resolve(__dirname, '../src/view/components'),
     }
 
     return config;

@@ -4,8 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { withRegistry, Registry } from '@bem-react/di';
 
 import { IExtendedWindow } from '../typings';
-import { register } from './components/SW/SW';
-import { IPageProps } from './components/Page/Page';
+import { register } from './components/SW';
+import { IPageProps } from './components/Page';
 
 const { requestId } = window as IExtendedWindow;
 

@@ -1,7 +1,7 @@
 import { Registry } from '@bem-react/di';
 
-import { Serp, cnSerp } from '../../Serp/Serp@desktop';
-import { Ticket, cnTicket } from '../../Ticket/Ticket@desktop';
+import { Serp, cnSerp } from '@b/Serp/@desktop';
+import { Ticket, cnTicket } from '@b/Ticket/@desktop';
 
 export const desktop = new Registry({ id: 'platform' });
 

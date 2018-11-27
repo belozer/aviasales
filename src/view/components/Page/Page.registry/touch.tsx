@@ -1,7 +1,7 @@
 import { Registry } from '@bem-react/di';
 
-import { Serp, cnSerp } from '../../Serp/Serp@touch';
-import { Ticket, cnTicket } from '../../Ticket/Ticket@touch';
+import { Serp, cnSerp } from '@b/Serp/@touch';
+import { Ticket, cnTicket } from '@b/Ticket/@touch';
 
 export const touch = new Registry({ id: 'platform' });
 

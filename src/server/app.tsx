@@ -11,7 +11,7 @@ import { withRegistry } from '@bem-react/di';
 import { IStore } from '../typings';
 import { tickets } from '../packages/tickets';
 import { currency } from '../packages/currency';
-import { Page, IPageProps } from '../view/components/Page/Page';
+import { Page, IPageProps } from '../view/components/Page';
 import { desktop } from '../view/components/Page/Page.registry/desktop';
 import { touch } from '../view/components/Page/Page.registry/touch';
 

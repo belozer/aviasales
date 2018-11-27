@@ -57,7 +57,10 @@ const optimization = isDev ? undefined : {
 module.exports = {
     resolve: {
         modules: ['node_modules'],
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+        alias : {
+            '@b' : path.resolve(__dirname, '../src/view/components'),
+        }
     },
     devtool: 'source-map',
     bail: true,
